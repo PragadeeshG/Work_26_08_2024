@@ -1,0 +1,15 @@
+create table if not exists bank_forex_data(
+forex_account_number Integer not null,
+forex_card varchar(255) null,
+remit_abroad_non_account_holder varchar(255) null,
+online_funds Integer null,
+safe_deposit_funds Integer null,
+online_transfer_mode varchar(255) null,
+imps_code Integer null,
+rtgs_code Integer null,
+foreign_currency_cash varchar(255) null,
+currency_demand_drafts Integer null,
+traveller_cheque_number Integer null,
+traveller_cheque_validity varchar(255) null,
+remarks varchar(255) null,
+constraint bank_forex_data_pk primary key(forex_account_number));
